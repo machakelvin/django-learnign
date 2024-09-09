@@ -1,11 +1,19 @@
-<html>
-  <head>
-    <title>Macha's website</title>
-  </head>
+<!-- main/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>{% block title %}Macha's website{% endblock %}</title>
+</head>
+<body>
+    <header>
+      Welcome Home
+    </header>
 
-  <body>
-    <p>
-      🌟Join UniReady Academy: Your Gateway to Career Success!🌟 Are you ready
+    <main>
+        {% block content %}
+        <p>🌟Join UniReady Academy: Your Gateway to Career Success!🌟 Are you ready
       to take charge of your future? At UniReady Academy, we prepare you for the
       real world, equipping you with the skills and knowledge you need to excel
       in your career and beyond. Our programs are designed to bridge the gap
@@ -14,7 +22,14 @@
       UniReady! Join us today and start your journey towards success! Click the
       link below to join us....... don't miss it🚀🚀 https://lnkd.in/dNDMmyKG
       hashtag#UniReadyAcademy hashtag#CareerSuccess hashtag#FutureLeaders
-      hashtag#Skill
-    </p>
-  </body>
+      hashtag#Skill</p>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
 </html>
