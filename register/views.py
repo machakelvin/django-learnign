@@ -1,5 +1,5 @@
 # register/views.py
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import RegisterForm
 
 def register(response):
@@ -8,7 +8,7 @@ def register(response):
         if form.is_valid():
             form.save()
             
-        return redirect("/home")    
+        return redirect("/")    
     else:
         form = RegisterForm()
     return render(response, 'register/register.html', {"form": form})

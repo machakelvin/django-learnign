@@ -7,4 +7,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', v.register, name="register"),  # This URL is correct
     path("", include('main.urls')),  # Make sure 'main.urls' is correctly set up
+    path("", include("django.contrib.auth.urls")),
 ]
